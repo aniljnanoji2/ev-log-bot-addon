@@ -87,5 +87,5 @@ def update_ghseet_data(rides):
 scooter_display_id = get_scooter_details(scooter_id, api_token, 1, "desc")
 # get this scooter_display_id once and store it for future use
 # print(f"Scooter Display ID: {scooter_display_id}")
-ride_data = get_ride_details(scooter_display_id, api_token, 20, "desc")
+ride_data = get_ride_details(scooter_display_id, api_token, 2000, "desc")
 update_ghseet_data(ride_data)
