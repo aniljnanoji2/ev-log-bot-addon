@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 import os
 import base64
 
+# keep-alive: updated to prevent workflow disable
+
 load_dotenv(override=True)
 
 scooter_id = os.getenv("scooter_id")
