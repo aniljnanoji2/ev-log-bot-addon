@@ -77,7 +77,8 @@ def update_ghseet_data(rides):
     """
     Processes new ride data and sends updates to the Google Apps Script webhook.
     """
-    if not rides:  # Check if rides is empty
+    # Check if rides is empty
+    if not rides:
         print("No ride data to process.")
         return
 
