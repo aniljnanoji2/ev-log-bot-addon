@@ -20,6 +20,7 @@ def get_scooter_details(scooter_id, api_token, limit=None, sort_order="asc"):
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         result = response.json()
+        print(f"DEBUG: The data from Ather is: {result}")
         display_id = result[0]["scooter"]["display_id"][2:]
         return display_id
     else:
